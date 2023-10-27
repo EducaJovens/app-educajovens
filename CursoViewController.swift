@@ -1,6 +1,6 @@
 import UIKit
 
-class CursosViewController: UIViewController {
+class CursoViewController: UIViewController {
     
     private let curso: [Curso] = [
         .init(name: "Finanças", descricao: "Como abrir uma finança", imageURL: ""),
@@ -60,14 +60,15 @@ class CursosViewController: UIViewController {
     }
 }
 
-extension CursosViewController:UITableViewDataSource {
+extension CursoViewController:UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         curso.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = curso[indexPath.row].name
+        let cell = CursoCell()
+        let curso = curso[indexPath.row]
+        cell.setup(curso: curso)
         
         return cell
     }

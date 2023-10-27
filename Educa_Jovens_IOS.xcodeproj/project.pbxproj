@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		CE1EE7512AE8915200CE07E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1EE7502AE8915200CE07E1 /* AppDelegate.swift */; };
 		CE1EE7532AE8915200CE07E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1EE7522AE8915200CE07E1 /* SceneDelegate.swift */; };
-		CE1EE7552AE8915200CE07E1 /* CursosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1EE7542AE8915200CE07E1 /* CursosViewController.swift */; };
 		CE1EE75A2AE8915200CE07E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1EE7592AE8915200CE07E1 /* Assets.xcassets */; };
 		CE1EE75D2AE8915200CE07E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1EE75B2AE8915200CE07E1 /* LaunchScreen.storyboard */; };
 		CE1EE7682AE8915300CE07E1 /* Educa_Jovens_IOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1EE7672AE8915300CE07E1 /* Educa_Jovens_IOSTests.swift */; };
 		CE1EE7722AE8915300CE07E1 /* Educa_Jovens_IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1EE7712AE8915300CE07E1 /* Educa_Jovens_IOSUITests.swift */; };
 		CE1EE7742AE8915300CE07E1 /* Educa_Jovens_IOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1EE7732AE8915300CE07E1 /* Educa_Jovens_IOSUITestsLaunchTests.swift */; };
+		CE54F4B92AEB1FF6008B24F1 /* Curso.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54F4B82AEB1FF6008B24F1 /* Curso.swift */; };
+		CE54F4BB2AEB3B04008B24F1 /* CursoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54F4BA2AEB3B04008B24F1 /* CursoViewController.swift */; };
+		CE54F4BD2AEB3D40008B24F1 /* CursoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54F4BC2AEB3D40008B24F1 /* CursoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,6 @@
 		CE1EE74D2AE8915200CE07E1 /* Educa_Jovens_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Educa_Jovens_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1EE7502AE8915200CE07E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE1EE7522AE8915200CE07E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE1EE7542AE8915200CE07E1 /* CursosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursosViewController.swift; sourceTree = "<group>"; };
 		CE1EE7592AE8915200CE07E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE1EE75C2AE8915200CE07E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE1EE75E2AE8915200CE07E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		CE1EE76D2AE8915300CE07E1 /* Educa_Jovens_IOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Educa_Jovens_IOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1EE7712AE8915300CE07E1 /* Educa_Jovens_IOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Educa_Jovens_IOSUITests.swift; sourceTree = "<group>"; };
 		CE1EE7732AE8915300CE07E1 /* Educa_Jovens_IOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Educa_Jovens_IOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE54F4B82AEB1FF6008B24F1 /* Curso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curso.swift; sourceTree = "<group>"; };
+		CE54F4BA2AEB3B04008B24F1 /* CursoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursoViewController.swift; sourceTree = "<group>"; };
+		CE54F4BC2AEB3D40008B24F1 /* CursoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		CE1EE7442AE8915200CE07E1 = {
 			isa = PBXGroup;
 			children = (
+				CE54F4BA2AEB3B04008B24F1 /* CursoViewController.swift */,
 				CE1EE74F2AE8915200CE07E1 /* Educa_Jovens_IOS */,
 				CE1EE7662AE8915300CE07E1 /* Educa_Jovens_IOSTests */,
 				CE1EE7702AE8915300CE07E1 /* Educa_Jovens_IOSUITests */,
@@ -99,10 +104,11 @@
 			children = (
 				CE1EE7502AE8915200CE07E1 /* AppDelegate.swift */,
 				CE1EE7522AE8915200CE07E1 /* SceneDelegate.swift */,
-				CE1EE7542AE8915200CE07E1 /* CursosViewController.swift */,
 				CE1EE7592AE8915200CE07E1 /* Assets.xcassets */,
 				CE1EE75B2AE8915200CE07E1 /* LaunchScreen.storyboard */,
 				CE1EE75E2AE8915200CE07E1 /* Info.plist */,
+				CE54F4B82AEB1FF6008B24F1 /* Curso.swift */,
+				CE54F4BC2AEB3D40008B24F1 /* CursoCell.swift */,
 			);
 			path = Educa_Jovens_IOS;
 			sourceTree = "<group>";
@@ -254,9 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE1EE7552AE8915200CE07E1 /* CursosViewController.swift in Sources */,
 				CE1EE7512AE8915200CE07E1 /* AppDelegate.swift in Sources */,
 				CE1EE7532AE8915200CE07E1 /* SceneDelegate.swift in Sources */,
+				CE54F4BD2AEB3D40008B24F1 /* CursoCell.swift in Sources */,
+				CE54F4B92AEB1FF6008B24F1 /* Curso.swift in Sources */,
+				CE54F4BB2AEB3B04008B24F1 /* CursoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
