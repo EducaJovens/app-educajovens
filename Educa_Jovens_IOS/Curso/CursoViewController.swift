@@ -3,8 +3,8 @@ import UIKit
 class CursoViewController: UIViewController {
     
     private let curso: [Curso] = [
-        .init(name: "Finanças", descricao: "Como abrir uma finança", imageURL: ""),
-        .init(name: "Abrir conta", descricao: "Como abrir uma conta no banco", imageURL: ""),
+        .init(name: "Abrir conta", descricao: "Como abrir uma finança", imageURL: ""),
+        .init(name: "Finanças", descricao: "Como abrir uma conta no banco", imageURL: ""),
         .init(name: "Investimento", descricao: "Como fazer o seu primeiro investimento", imageURL: ""),
         .init(name: "Cartão de Crédito", descricao: "Como abrir um cartão de crédito", imageURL: "")
     ]
@@ -36,6 +36,7 @@ class CursoViewController: UIViewController {
     private func setupView(){
         view.backgroundColor = .white
         tableView.dataSource = self
+        tableView.delegate = self
         addViewsInHierarchy()
         setupConstraints()
     }
@@ -71,5 +72,13 @@ extension CursoViewController:UITableViewDataSource {
         cell.setup(curso: curso)
         
         return cell
+    }
+}
+
+extension CursoViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Tarefa", bundle: Bundle(for: TarefaViewController.self))
+        let tarefaViewController = storyboard.instantiateViewController(withIdentifier: "Tarefa")
+        navigationController?.pushViewController(tarefaViewController, animated: true)
     }
 }

@@ -6,6 +6,8 @@ class CursoCell: UITableViewCell {
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.axis = .horizontal
         stack.spacing = 16
+        stack.backgroundColor = .blue
+        stack.layer.cornerRadius = 16
         return stack
     }()
     
@@ -22,13 +24,14 @@ class CursoCell: UITableViewCell {
         let stack = UIStackView()
         stack.axis = .vertical
         stack.spacing = 8
+        stack.distribution = .equalCentering
         return stack
     }()
     
     private let nameLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16, weight: .bold)
-        label.textColor = .black
+        label.textColor = .white
         label.numberOfLines = 0
         return label
     }()
@@ -36,7 +39,7 @@ class CursoCell: UITableViewCell {
     private let descricaoLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 14)
-        label.textColor = .darkGray
+        label.textColor = .lightGray
         label.numberOfLines = 0
         return label
     }()
@@ -59,9 +62,6 @@ class CursoCell: UITableViewCell {
        
     }
     
-    
-    
-    
     private func setupView() {
         selectionStyle = .none
         
@@ -71,8 +71,10 @@ class CursoCell: UITableViewCell {
         contentView.addSubview(horinzontalStack)
         horinzontalStack.addArrangedSubview(cursoImageView)
         horinzontalStack.addArrangedSubview(verticalStack)
+        verticalStack.addArrangedSubview(UIView())
         verticalStack.addArrangedSubview(nameLabel)
         verticalStack.addArrangedSubview(descricaoLabel)
+        verticalStack.addArrangedSubview(UIView())
     }
     
     private func setupConstraints() {

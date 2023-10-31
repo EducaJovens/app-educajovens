@@ -17,6 +17,11 @@
 		CE54F4B92AEB1FF6008B24F1 /* Curso.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54F4B82AEB1FF6008B24F1 /* Curso.swift */; };
 		CE54F4BB2AEB3B04008B24F1 /* CursoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54F4BA2AEB3B04008B24F1 /* CursoViewController.swift */; };
 		CE54F4BD2AEB3D40008B24F1 /* CursoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54F4BC2AEB3D40008B24F1 /* CursoCell.swift */; };
+		CE54F4C32AEB519D008B24F1 /* TarefaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54F4C22AEB519D008B24F1 /* TarefaViewController.swift */; };
+		CE54F4C52AF0735B008B24F1 /* TarefaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54F4C42AF0735B008B24F1 /* TarefaCell.swift */; };
+		CE54F4C72AF073E4008B24F1 /* Tarefa.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54F4C62AF073E4008B24F1 /* Tarefa.swift */; };
+		CE54F4CA2AF08962008B24F1 /* Conteudo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE54F4C92AF08962008B24F1 /* Conteudo.storyboard */; };
+		CE54F4CC2AF089B2008B24F1 /* ConteudoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54F4CB2AF089B2008B24F1 /* ConteudoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		CE54F4B82AEB1FF6008B24F1 /* Curso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curso.swift; sourceTree = "<group>"; };
 		CE54F4BA2AEB3B04008B24F1 /* CursoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursoViewController.swift; sourceTree = "<group>"; };
 		CE54F4BC2AEB3D40008B24F1 /* CursoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursoCell.swift; sourceTree = "<group>"; };
+		CE54F4C22AEB519D008B24F1 /* TarefaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarefaViewController.swift; sourceTree = "<group>"; };
+		CE54F4C42AF0735B008B24F1 /* TarefaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarefaCell.swift; sourceTree = "<group>"; };
+		CE54F4C62AF073E4008B24F1 /* Tarefa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tarefa.swift; sourceTree = "<group>"; };
+		CE54F4C92AF08962008B24F1 /* Conteudo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Conteudo.storyboard; sourceTree = "<group>"; };
+		CE54F4CB2AF089B2008B24F1 /* ConteudoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConteudoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +91,6 @@
 		CE1EE7442AE8915200CE07E1 = {
 			isa = PBXGroup;
 			children = (
-				CE54F4BA2AEB3B04008B24F1 /* CursoViewController.swift */,
 				CE1EE74F2AE8915200CE07E1 /* Educa_Jovens_IOS */,
 				CE1EE7662AE8915300CE07E1 /* Educa_Jovens_IOSTests */,
 				CE1EE7702AE8915300CE07E1 /* Educa_Jovens_IOSUITests */,
@@ -102,13 +111,14 @@
 		CE1EE74F2AE8915200CE07E1 /* Educa_Jovens_IOS */ = {
 			isa = PBXGroup;
 			children = (
+				CE54F4C82AF08922008B24F1 /* Conteudo */,
+				CE54F4C12AEB50D3008B24F1 /* Tarefa */,
+				CE54F4C02AEB50C1008B24F1 /* Curso */,
 				CE1EE7502AE8915200CE07E1 /* AppDelegate.swift */,
 				CE1EE7522AE8915200CE07E1 /* SceneDelegate.swift */,
 				CE1EE7592AE8915200CE07E1 /* Assets.xcassets */,
 				CE1EE75B2AE8915200CE07E1 /* LaunchScreen.storyboard */,
 				CE1EE75E2AE8915200CE07E1 /* Info.plist */,
-				CE54F4B82AEB1FF6008B24F1 /* Curso.swift */,
-				CE54F4BC2AEB3D40008B24F1 /* CursoCell.swift */,
 			);
 			path = Educa_Jovens_IOS;
 			sourceTree = "<group>";
@@ -128,6 +138,35 @@
 				CE1EE7732AE8915300CE07E1 /* Educa_Jovens_IOSUITestsLaunchTests.swift */,
 			);
 			path = Educa_Jovens_IOSUITests;
+			sourceTree = "<group>";
+		};
+		CE54F4C02AEB50C1008B24F1 /* Curso */ = {
+			isa = PBXGroup;
+			children = (
+				CE54F4BA2AEB3B04008B24F1 /* CursoViewController.swift */,
+				CE54F4B82AEB1FF6008B24F1 /* Curso.swift */,
+				CE54F4BC2AEB3D40008B24F1 /* CursoCell.swift */,
+			);
+			path = Curso;
+			sourceTree = "<group>";
+		};
+		CE54F4C12AEB50D3008B24F1 /* Tarefa */ = {
+			isa = PBXGroup;
+			children = (
+				CE54F4C22AEB519D008B24F1 /* TarefaViewController.swift */,
+				CE54F4C42AF0735B008B24F1 /* TarefaCell.swift */,
+				CE54F4C62AF073E4008B24F1 /* Tarefa.swift */,
+			);
+			path = Tarefa;
+			sourceTree = "<group>";
+		};
+		CE54F4C82AF08922008B24F1 /* Conteudo */ = {
+			isa = PBXGroup;
+			children = (
+				CE54F4C92AF08962008B24F1 /* Conteudo.storyboard */,
+				CE54F4CB2AF089B2008B24F1 /* ConteudoViewController.swift */,
+			);
+			path = Conteudo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1EE75D2AE8915200CE07E1 /* LaunchScreen.storyboard in Resources */,
+				CE54F4CA2AF08962008B24F1 /* Conteudo.storyboard in Resources */,
 				CE1EE75A2AE8915200CE07E1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +301,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1EE7512AE8915200CE07E1 /* AppDelegate.swift in Sources */,
+				CE54F4C32AEB519D008B24F1 /* TarefaViewController.swift in Sources */,
+				CE54F4C72AF073E4008B24F1 /* Tarefa.swift in Sources */,
+				CE54F4CC2AF089B2008B24F1 /* ConteudoViewController.swift in Sources */,
+				CE54F4C52AF0735B008B24F1 /* TarefaCell.swift in Sources */,
 				CE1EE7532AE8915200CE07E1 /* SceneDelegate.swift in Sources */,
 				CE54F4BD2AEB3D40008B24F1 /* CursoCell.swift in Sources */,
 				CE54F4B92AEB1FF6008B24F1 /* Curso.swift in Sources */,
